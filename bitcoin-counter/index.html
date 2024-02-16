@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lumanosimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+   <canvas id="canvas"></canvas>
+    <div class="retro">
+        <div class="grid"></div>
+        <div class="lines"></div>
+        <div class="title">
+            <h1>
+                <span>BITCOIN</span>
+                <span>MINING</span>
+            </h1>
+            <h1 class="pt">Personal Tracker</h1>
+        </div>
+    <div class="container">
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="containers">
+        <div class="container2">
+            <div id="amount">
+                <h3 class="pi">Pi Total:</h3> <span id="btc-number"></span><b>π</b>
+                <h4>Difference: -0.374</h4>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div id="amount2">
+                <h3 class="sat">Sat Total:</h3> <span id="btc-number2"></span><b>sat</b>
+            </div>
+        </div>
+    </div>
+        <script type="module" src="./scripts/background.js"></script>
+        <script type="module" src="./scripts/datetime.js"></script>
+        <script type="module" src="./scripts/script.js"></script>
+        <script type="module" src="./scripts/script2.js"></script>
+    </div>      
+</body>
+</html>

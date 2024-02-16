@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* Styles for the container and amount */
+
+body {
+   margin: 0;
+   overflow: hidden;
+   background: radial-gradient(rgba(#7600bf, 0.5) 0%, transparent 70%), linear-gradient(#0b161e 0%, #202076 70%);
+}
+
+#canvas {
+   z-index: -1;
+   left: 0;
+   top: 0;
+   position: absolute;
+}
+
+.title {
+   color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding-top: 35px;
+}
+
+.pt {
+   font-size: 18pt;
+}
+
+h2 {
+   font-size: 26pt;
+}
+
+#amount, #amount2, h3, h4 {
+   display: inline-block;
+   padding-left: 20px;
+   position: relative;
+   color: #fff;
+}
+
+.pi, .sat, h4 {
+   font-family: "Courgette", cursive;
+   font-weight: 700;
+   font-style: bold;
+   color: #ffffff;
+}
+
+.sat {
+   padding-left: 20px;
+}
+
+/* Style for the BTC number */
+#btc-number {
+   color: #03fd42;
+   font-size: 21px;
+   padding-left: 25px;
+}
+
+#btc-number2 {
+   color: #03fd42;
+   font-size: 21px;
+   padding-left: 25px;
+}
+
+.container, .date, .time {
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 30px;
+
+}
+
+.containers {
+   display: flex;
+   flex-direction: column;
+   gap: 1px;
+}
+
+.date {
+   font-size: 16pt;
+   font-family: "Courgette", cursive;
+  font-weight: 700;
+  font-style: bold;
+  padding: 20px;
+  color: #ffffff;
+  padding-top: 75px;
+}
+
+.time {
+   font-size: 13pt;
+   font-family: "Lumanosimo", cursive;
+   font-weight: 700;
+   font-style: bold;
+   padding-left: 20px;
+   color: #ffffff;
+}
+
+@keyframes lights { 
+   0% {
+      color: hsl(150, 0%, 80%);
+      -webkit-text-fill-color: #000000;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #73dbb0;
+      text-shadow:
+         0 0 1em hsla(113, 100%, 50%, 0.2),
+         0 0 0.125em hsla(113, 100%, 60%, 0.3),
+         -1em -0.125em 0.5em hsla(199, 100%, 60%, 0),
+         1em 0.125em 0.5em hsla(61, 100%, 60%, 0);
+      }
+   30% {
+      color: hsl(150, 80%, 90%);
+      -webkit-text-fill-color: #000000;
+      -webkit-text-stroke-width: 1.25px;
+      -webkit-text-stroke-color: #73dbb0;
+      text-shadow:
+         0 0 1em hsla(113, 100%, 50%, 0.5),
+         0 0 0.125em hsla(113, 100%, 60%, 0.3),
+         -0.5em -0.125em 0.25em hsla(199, 100%, 60%, 0.2),
+         0.5em 0.125em 0.25em hsla(61, 100%, 60%, 0.4);
+      }
+   40% {
+      color: hsl(150, 100%, 95%);
+      -webkit-text-fill-color: #000000;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: #73dbb0;
+      text-shadow:
+         0 0 1em hsla(113, 100%, 50%, 0.5),
+         0 0 0.125em hsla(113, 100%, 90%, 0.3),
+         -0.25em -0.125em 0.5em hsla(199, 100%, 60%, 0.2),
+         0.25em 0.125em 0.5em hsla(61, 100%, 60%, 0.4);
+      }
+   70% {
+      color: hsl(150, 80%, 90%);
+      -webkit-text-fill-color: #000000;
+      -webkit-text-stroke-width: 1.75px;
+      -webkit-text-stroke-color: #73dbb0;
+      text-shadow:
+         0 0 1em hsla(113, 100%, 50%, 0.5),
+         0 0 0.125em hsla(113, 100%, 60%, 0.3),
+         0.5em -0.125em 0.5em hsla(199, 100%, 60%, 0.2),
+         -0.5em 0.125em 0.5em hsla(61, 100%, 60%, 0.4);
+      }
+   100% {
+      color: hsl(150, 0%, 80%); 
+      -webkit-text-fill-color: #000000;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #73dbb0;
+
+      text-shadow:
+         0 0 1em hsla(113, 100%, 50%, 0.2),
+         0 0 0.125em hsla(113, 100%, 60%, 0.3),
+         1em -0.125em 0.5em hsla(199, 100%, 60%, 0),
+         -1em 0.125em 0.5em hsla(61, 100%, 60%, 0);
+   }
+}
+
+h1 {
+   margin: auto;
+   font-size: 2.5rem;
+   animation: lights 5s 750ms linear infinite;
+   font-family: "Audiowide", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
